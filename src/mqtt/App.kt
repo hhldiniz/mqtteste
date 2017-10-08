@@ -1,8 +1,10 @@
 package mqtt
 
+import org.eclipse.paho.client.mqttv3.MqttClient
+
 class App : Runnable
 {
-    private val subscriber = Subscriber()
+    private val subscriber = Subscriber(MqttClient("tcp://m10.cloudmqtt.com:14603","client"))
     override fun run() {
         while(true)
         {
