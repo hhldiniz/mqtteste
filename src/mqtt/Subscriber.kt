@@ -11,6 +11,7 @@ class Subscriber(client : MqttClient) : MqttCallback{
     }
     private val messages = ArrayList<String>()
     override fun messageArrived(p0: String?, p1: MqttMessage?) {
+        println("Mensagem")
         if(p0 != null)
             messages.add(p0)
 
