@@ -15,6 +15,7 @@ class App : Runnable
         }
     }
 
+    val getSubscriber = {subscriber}
 }
 fun main(args: Array<String>)
 {
