@@ -5,11 +5,12 @@ import org.eclipse.paho.client.mqttv3.*
 class Subscriber(client : MqttClient) : MqttCallback{
     init {
         val connectionOptions = MqttConnectOptions()
-        connectionOptions.userName = "esykibhj"
-        connectionOptions.password = "Db37fQWizlO4".toCharArray()
+        connectionOptions.userName = "yhdytvpm"
+        connectionOptions.password = "2nMy0rfV-hKE".toCharArray()
         client.connect(connectionOptions)
-        client.subscribe("android/light")
-        client.subscribe("android/temperature")
+        client.subscribe("sensor/light")
+        client.subscribe("sensor/gyroscope")
+        client.subscribe("sensor/accel")
         client.setCallback(this)
     }
     private val messages = ArrayList<String>()

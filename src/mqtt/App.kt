@@ -4,7 +4,7 @@ import org.eclipse.paho.client.mqttv3.MqttClient
 
 class App : Runnable
 {
-    private val subscriber = Subscriber(MqttClient("tcp://m10.cloudmqtt.com:14603","client"))
+    private val subscriber = Subscriber(MqttClient("tcp://m11.cloudmqtt.com:18446","Desktop Client"))
     override fun run() {
         while(true)
         {
